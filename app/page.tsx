@@ -11,24 +11,11 @@ async function getData() {
 }
 
 export default async function Home() {
-
   const data = await getData();
-  const list = data.results;
 
   return (
-    /*<main>
-      <ul>
-        {list.map((species: string, key: number) => (
-          <>
-            <li key={key}>{species.name}</li>
-            <li>peepee</li>
-          </>
-        ))}
-      </ul>
-    </main>*/
-
-    <main>
-      <Search pokemon={list} />
+     <main>
+      <Search pokemon={data.results} />
     </main>
   )
 }
