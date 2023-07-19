@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </ul>
           </div>
         </div>
-        <div className="mt-4 bg-white rounded-md col-start-2 col-span-full -ml-48 mr-4 h-32">
+        <div className="mt-4 bg-white rounded-md col-start-2 -ml-48 mr-4 h-32 flex">
           <h2 className="text-2xl text-center">Weight</h2>
           <p className="text-xl text-center mt-4">{data.weight}</p>
         </div>
